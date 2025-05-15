@@ -32,6 +32,6 @@ const baseLoginSchema = Joi.object({
   }),
 });
 
-// 🧼 Export all validators in one block
+// Export all validators in one block
 export const registerUserSchema = validatewithjoi(registerSchema);
 export const loginUserSchema = validatewithjoi(baseLoginSchema);
