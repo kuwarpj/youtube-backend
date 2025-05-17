@@ -5,7 +5,7 @@ import { registerUserSchema } from "../utils/validators.ut.js";
 const router = Router();
 
 router.route("/register").post(
-  registerUserSchema,
+  
   upload.fields([
     {
       name: "avatar",
@@ -16,6 +16,7 @@ router.route("/register").post(
       maxCount: 1,
     },
   ]),
+  registerUserSchema,
   registerUser
 );
 

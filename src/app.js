@@ -23,7 +23,6 @@ app.use(cookieParser());
 //Routes import
 
 import userRouter from './routes/user.rt.js'
-import { ApiError } from "./utils/apiError.js";
 
 
 
